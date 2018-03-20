@@ -18,12 +18,14 @@
    			<span>vue.directive自定义指令</span>
    			<p v-color='styleObject.color'>{{num}}</p>
    			<button @click="addNum()">add</button>
-   		
    		</div>
    		<p>关于对ref的理解</p>
    		<p ref="outsideDomRef">ref在外面的元素上</p>
    		<son ref="child"></son>
    	<!--	<span ref="second">我是第二个</span>-->
+    <div>
+         <div></div>
+    </div> 
   </div>
 </template>
 
@@ -61,7 +63,6 @@ export default {
   created(){
 		console.log(this.$refs.child);
   },
-  onmou
   methods:{
   	addNum(){
   		this.num += 1;
